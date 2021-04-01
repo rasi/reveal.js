@@ -21,21 +21,21 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFontSize: 24px;
+$mainFont: Helvetica, sans-serif;
+$headingFont: Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 // Remove heading text conversion to uppercase
 $headingTextTransform: none;
-$headingFontWeight: 600;
+$headingFontWeight: 400;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
-$heading3Size: 1.3em;
+$heading3Size: 1.4em;
 $heading4Size: 1.0em;
 
 // Change text colors against dark slide backgrounds
@@ -45,3 +45,30 @@ $heading4Size: 1.0em;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+// Make slides always 100% height
+.reveal section {
+    min-height: 100%;
+}
+
+.reveal em {
+    color: rgb(223, 186, 24);
+    font-weight: 800;
+    font-style: normal;
+}
+
+.reveal h2 {
+    font-weight: bold;
+}
+
+.reveal h3 {
+    padding-top: 10px;
+}
+
+// Add references to bottom right
+.cite {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 24px;
+}
