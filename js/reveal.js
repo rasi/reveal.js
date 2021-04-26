@@ -2587,7 +2587,11 @@ export default function( revealElement, options ) {
 		registerPlugin: plugins.registerPlugin.bind( plugins ),
 		hasPlugin: plugins.hasPlugin.bind( plugins ),
 		getPlugin: plugins.getPlugin.bind( plugins ),
-		getPlugins: plugins.getRegisteredPlugins.bind( plugins )
+		getPlugins: plugins.getRegisteredPlugins.bind( plugins ),
+
+
+		// Return controlers
+		getKeyBoard: () => keyboard,
 
 	};
 
